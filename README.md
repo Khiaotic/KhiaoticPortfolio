@@ -1,2 +1,2 @@
 # KhiaoticPortfolio
-an updated react portfolio
+an updated react portfolio for the time being
