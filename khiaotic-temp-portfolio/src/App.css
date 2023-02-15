@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@font-face {
+  font-family:'Oi', cursive;
+  src: url('./assets/font/Oi-Regular.ttf');
+}
+
+
 .App {
   text-align: center;
 }
@@ -13,17 +21,25 @@
   }
 }
 /* colors
-darkblue: #0f1ba1
-darkseafoam: #27CD77
+dark_blue: #0f1ba1
+dark_sea_foam: #27CD77
+dark_pink: #E53894
+dark_green: #000600
 ................................
-midblue: #5865F2
-midyellow: #5865F2
+mid_blue: #5865F2
+mid_yellow: #5865F2
+mid_pink: #F57DBA
+mid_orange: #F98F19
+mid_black: #191A1C
+mid_white: #0f1ba1
 ................................
-pure
-pure
+lite_blue: #87DBFF
+liter_blue:#0f1ba1
+lite_white: #FFFEFF
+lite_yellow: #FFF4B2
 */
 .App-header {
-  background-color: #282c34;
+  background-color: #0f1ba1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
