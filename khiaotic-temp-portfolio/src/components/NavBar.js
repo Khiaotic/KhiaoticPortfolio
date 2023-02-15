@@ -15,9 +15,15 @@ export const NavBar = () => {
             setScrolled(false);
         }
        }
-    })
+       window.addEventListener("scroll", onScroll);
+
+       return () => window.removeEventListener("scroll", onScroll);
+    }, [])
+    const onUpdateActionLink = (value) => {
+        setActiveLink(value);
+    }
   return (
-    <Navbar  expand="lg">
+    <Navbar  expand="lg" className={scrolled ? "scrolled":  ""}  >
       <Container>
         <Navbar.Brand href="#home">
             <img src={''} alt="LOGO" />
@@ -27,19 +33,19 @@ export const NavBar = () => {
             </Navbar.Toggle> 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>    
-            <Nav.Link href="#skills">Skills</Nav.Link>    
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>    
-            <Nav.Link href="#contact">Contact</Nav.Link>    
-            <Nav.Link href="#résumé">Résumé</Nav.Link>    
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#about" className={activeLink === 'about' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('about')}>About</Nav.Link>    
+            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('skills')}>Skills</Nav.Link>    
+            <Nav.Link href="#portfolio" className={activeLink === 'portfolio' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('portfolio')}>Portfolio</Nav.Link>    
+            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('contact')}>Contact</Nav.Link>    
+            <Nav.Link href="#résumé" className={activeLink === 'résumé' ? 'active-Link' : 'navbar-link'} onClick={() =>onUpdateActionLink('résumé')}>Résumé</Nav.Link>    
           </Nav>
           <span className="navbar-text">
             <div className="social-media-icons">
                 <a href="#"><img src={} alt="LinkedIn"  /></a>
-                <a href="#"><img src={} alt="Youtube"  /></a>
-                <a href="#"><img src={} alt="Instagram"  /></a>
                 <a href="#"><img src={} alt="Github"  /></a>
+                <a href="#"><img src={} alt="Instagram"  /></a>
+                <a href="#"><img src={} alt="Youtube"  /></a>
             </div>
             <button className="" onClick={() => console.log('connected link')}><span>Establish A Connection</span></button>
           </span>
