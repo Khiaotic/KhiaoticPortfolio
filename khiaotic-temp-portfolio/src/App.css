@@ -1,18 +1,26 @@
 /*custom font*/
-@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 @font-face {
-  font-family:'Oi', cursive;
-  src: url('./assets/font/Oi-Regular.ttf');
+  font-family: 'PT Sans', sans-serif;
+  src: url('../assets/font/PTSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  src: url('../assets/font/PTSans-Bold.ttf');
+  font-weight: 700;
 }
 @font-face {
   font-family: 'Noto Sans', sans-serif;
-  src: url('./assets/font/NotoSans-SemiBold.ttf');
+  src: url('../assets/font/NotoSans-SemiBold.ttf');
+  font-weight: 800;
 }
 @font-face {
   font-family: 'Noto Sans', sans-serif;
-  src: url('./assets/font/NotoSans-Regular.ttf');
+  src: url('../assets/font/NotoSans-Regular.ttf');
+  font-weight: 500;
 }
 
 /*Default CSS*/
@@ -31,9 +39,9 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #0f1ba1 !important;
+  background-color: #5865F2 !important;
   color: #fff !important;
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: 'PT Sans', sans-serif !important;
 }
 
 h1, 
@@ -94,7 +102,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   justify-content: center;
   margin-right: 6px;
   line-height: 1;
-  /*border: lighter blue*/
+  /*border: lighter blue 1px solid */
 }
 
 .social-media-icons a::before {
@@ -123,6 +131,60 @@ transition: .5s ease-in-out;
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(25%)
 }
 
+.navbar-text button {
+  font-weight: 700;
+  color: '';
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  /* ///transparent? bg */
+  background-color:red ;
+  transition: .05s ease-in-out;
+}
+
+.navbar-text button span {
+  z-index: 1;
+}
+
+.navbar-text button::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top:0;
+  z-index: -1;
+  transition: .5s ease-in-out;
+}
+
+.navbar-text button:hover {
+  color: '';
+}
+
+.navbar-text button:hover::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+nav.navbar .navbar-toggle:active,
+nav.navbar .navbar-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggle-icon {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  top: -2px;
+  transition: all 300ms linear;
+  border-bottom: 2px solid #fff
+}
 
 
 
@@ -135,6 +197,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -148,7 +211,7 @@ dark_sea_foam: #27CD77
 dark_pink: #E53894
 dark_green: #000600
 ................................
-mid_blue: #5865F2
+mid_cloud_blue: #5865F2
 mid_yellow: #FEE75B
 mid_pink: #F57DBA
 mid_orange: #F98F19
