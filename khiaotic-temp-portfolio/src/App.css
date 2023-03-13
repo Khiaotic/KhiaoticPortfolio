@@ -140,8 +140,8 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin-left: 18px;
   position: relative;
   /* ///transparent? bg */
-  background-color:red ;
-  transition: .05s ease-in-out;
+  background-color: #FEE75B;
+  transition: .5s ease-in-out;
 }
 
 .navbar-text button span {
@@ -186,6 +186,49 @@ nav.navbar .navbar-toggle-icon {
   border-bottom: 2px solid #fff
 }
 
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+  width: 24px;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 2px;
+  content: '';
+  z-index: 2;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+  top:8px
+}
+
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px
+}
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon::before {
+  transform: rotate(-45deg);
+  background-color: #fff;
+  height: 2px
+}
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
+border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* custom css for application*/
@@ -197,7 +240,7 @@ nav.navbar .navbar-toggle-icon {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  font-weight: 700;
+ 
 }
 
 @media (prefers-reduced-motion: no-preference) {
