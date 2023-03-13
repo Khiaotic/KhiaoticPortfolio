@@ -222,7 +222,45 @@ border-color: transparent;
 }
 
 
+/* /////////////////////////////////HERO//////////////////////////////// */
 
+.hero {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  /* background-image: url('') */
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
+hero .tagline {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border: 1px solid #fff
+}
+
+.hero h1 {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1;
+letter-spacing: .8px;
+  margin-bottom: 20px;
+  display: block
+}
+
+.hero button {
+  color: blueviolet;
+  margin-top: 60px;
+  display: flex;
+  align-items:center;
+}
+
+/* .hero button:hover svg {
+
+} */
 
 
 
