@@ -10,6 +10,7 @@ export const Hero = () => {
                         <h1>{"Hej Hej! I'm Khiaotic"}
                         <span className="wrap">Animator and Web Developer</span>
                         <p></p>
+                        <button></button>
                         </h1>
                     </Col>
                 </row>
