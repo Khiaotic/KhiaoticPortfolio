@@ -6,9 +6,10 @@ import "react-multi-carousel/lib/styles.css";
 
 
 export const WebSkills = () =>{
+    /////responsiveness  for all around devices///////
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
+         
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -40,7 +41,7 @@ export const WebSkills = () =>{
             <p>description</p>
             <Carousel responsive={responsive} infinite={true} className='skills-slider'>
                 <div>
-                    <img src={''} alt="Image"></img>
+                    <img src={'http://via.placeholder.com/360x360'} alt="Image"></img>
                 </div>
                 <h5>HTML</h5>
                 <div>

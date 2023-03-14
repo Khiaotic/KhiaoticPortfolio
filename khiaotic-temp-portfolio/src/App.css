@@ -270,12 +270,47 @@ letter-spacing: .8px;
 }
 
 
-.skiils-bx {
+.skills-bx {
+background: black;
+text-align: center;
+border-radius: 64px;
+padding: 60px 50px;
+margin-top: -60px;
+}
 
+skills h5 {
+  font-weight: 700;
+  font-size: 45px
+}
+
+.skills p {
+font-size: 18px;
+line-height: 1.5em;
+margin: 14px 0 75px 0;
+letter-spacing: .8px;
+color: #fff;
 }
 
 
+.skills-slider {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
 
+.skills-slider .item img {
+  width: 50px;
+  margin: 0 auto 15px auto;
+}
+
+
+.background-image-left {
+  top:28%;
+  position:relative;
+  bottom: 0;
+  width: 40%;
+  z-index:-4;
+}
 
 
 
