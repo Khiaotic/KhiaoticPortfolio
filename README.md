@@ -7,9 +7,10 @@ This application is covered by the MIT
 
 # 👀Preview and Demo
 Preview image: 
+![Screenshot 2023-03-13 214045](https://user-images.githubusercontent.com/112679225/224870175-e402ac38-a82b-4607-8302-8734aca791eb.jpg)
 
 
-Link to Demo: <br>
+Link to APP: https://khiaotic-portfolio.herokuapp.com/ <br>
 
 
 ## User Story
